@@ -1,0 +1,254 @@
+@charset "UTF-8";
+  
+  * {
+    box-sizing: border-box;
+   }
+    
+  body, #pagetop {
+       padding-left: 20%;
+       padding-top:0%;
+       padding-right: 5%;
+       padding-bottom: 0
+    }
+
+    #sideNav {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    #sideNav .navbar-nav .nav-item .nav-link {
+      font-weight: 800;
+      letter-spacing: 0.05rem;
+      text-transform: uppercase;
+    }
+    #sideNav .navbar-toggler:focus {
+      outline-color: #1003c0;
+    }
+    
+    @media (min-width: 992px) {
+      #sideNav {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+      }
+      #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+      }
+      #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+      }
+      #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+      }
+      #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+      }
+      #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+      }
+      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+      }
+    }
+    .social-icons .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.5rem;
+      width: 3.5rem;
+      background-color: transparent;
+      border-width: 3px;
+      border-style: solid;
+      border-color: #225ece;
+      color: #225ece;
+      border-radius: 100%;
+      font-size: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    .social-icons .social-icon:last-child {
+      margin-right: 0;
+    }
+    .social-icons .social-icon:hover {
+      color:white;
+      background-color: #225ece;
+    }
+    
+    .dev-icons {
+      font-size: 3rem;
+    }
+    
+    section.cv-seccion {
+      display: flex;
+      align-items: center;
+      padding-left: 5rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      max-width: 75rem;
+    }
+    section.cv-seccion .cv-seccion-contenido {
+      width: 100%;
+    }
+    
+    @media (min-width: 768px) {
+      section.cv-seccion {
+        min-height: 100vh;
+      }
+    }
+    @media (min-width: 992px) {
+      section.cv-seccion {
+        padding-left: 6rem;
+        padding-right: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 1;
+    opacity: 0.25;
+  }
+  
+  hr:not([size]) {
+    height: 1px;
+  }
+  
+  #Informacion-Personal.cv-seccion, #Experiencia.cv-seccion, #Educacion.cv-seccion, #Habilidades.cv-seccion {
+    padding-top: 0;
+    padding-left: 16%;
+    padding-right: 10%
+   
+  }
+  .Mi-presentacion {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    opacity: 0.85;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+
+  
+  .subtexto-titulo1 {
+    font-weight: 550;
+    font-size: large;
+    opacity: 0.95;
+  }
+
+  .titulo2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom:50px;
+    font-weight: 700;
+    color: #225ece;
+
+  }
+  .titulo3 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin:0
+  }
+
+  .subtexto-de-titulo3 {
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin:0
+  }
+
+  h3, .h3, h2, .h2, h1, .h1 {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 900;
+    line-height: 1.2;
+    color: #343a40;
+  }
+  
+  h1, .h1 {
+    font-size: calc(1.750rem + 6vw);
+  }
+    #Nombre_presentacion {
+      opacity: 0.95;
+
+    }
+  h2, .h2 {
+    font-size: calc(1.500rem + 2.7vw);
+  }
+    
+  h3, .h3 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+    
+  h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+   
+  .fechas {
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom:8px;
+    
+  } 
+  .flex-shrink-0 {
+    margin-top: 14px;
+  }
+
+  
+  p {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .aclaracion{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin:0;
+    font-style: italic
+  }
+  
+  ul {
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  #btnInfoComplement{
+      text-decoration:none;
+      font-weight: 550;
+      font-size: 16px;
+      color:#225ece;
+      padding-top:3.5px;
+      padding-bottom:3.5px;
+      padding-left:51px;
+      padding-right:51px;
+      background-color: transparent;
+      border-width: 3px;
+      border-style: solid;
+      border-color: #225ece;
+    }
+  
+  #btnInfoComplement:hover{
+    background-color: #225ece;
+    text-decoration:underline;
+    color: white;
+    }
